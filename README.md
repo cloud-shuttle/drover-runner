@@ -1,0 +1,11 @@
+# drover-runner
+
+Unikernel Platform Runner and Hypervisor daemon for executing secure multi-tenant microVM containers.
+
+## Key Features
+- **Local Sandbox Verification**: Integrates with local `kraft` CLI to run unikernel targets offline.
+- **Firecracker Orchestration**: Spawns isolated multi-tenant guest OS slices using Firecracker microVMs on KVM hosts.
+- **Virtual Isolation**: Configures isolated virtual bridge networks (TAP/TUN) and secure overlay disks with dynamic memory cleanup on completion.
+
+## Backlog
+Work items, epics, and tasks are tracked locally in JSON Lines format inside [`.beads/issues.jsonl`](.beads/issues.jsonl) following the platform's Beads convention.
