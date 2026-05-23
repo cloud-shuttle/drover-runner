@@ -1,0 +1,43 @@
+# Binaries
+bin/
+dvr
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+
+# Build artifacts from kraft / unikraft
+.unikraft/
+*.o
+*.a
+*.ko
+*.mod.c
+Module.symvers
+modules.order
+
+# Local kraft caches (can be large)
+manifests/
+sources/
