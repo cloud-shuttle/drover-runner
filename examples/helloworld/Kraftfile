@@ -4,6 +4,7 @@ unikraft: stable
 targets:
   # Developer machines (QEMU) - primary for local drun-001 / drun-002 loop
   - qemu/x86_64
+  - qemu/arm64
   # Production path (Firecracker) - what the real dvr daemon will use
   - fc/x86_64
 
