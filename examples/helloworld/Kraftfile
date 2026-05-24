@@ -1,0 +1,13 @@
+spec: v0.6
+name: helloworld
+unikraft: stable
+targets:
+  # Developer machines (QEMU) - primary for local drun-001 / drun-002 loop
+  - qemu/x86_64
+  # Production path (Firecracker) - what the real dvr daemon will use
+  - fc/x86_64
+
+# A classic minimal Unikraft "Hello World" application.
+# First `dvr unikernel build` will fetch the core + libraries (one-time, network).
+# After that, builds and runs are fast and fully offline.
+# This exercises the full local kraft integration for drun-001.
